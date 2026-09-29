@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Личный каталог приложений — скачать, посмотреть изменения и открыть исходный код." />
+    <meta name="theme-color" content="#050506" />
+    <title>Northstar — приложения</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23121214'/%3E%3Cpath d='M32 12l4.8 15.2L52 32l-15.2 4.8L32 52l-4.8-15.2L12 32l15.2-4.8L32 12z' fill='%232997ff'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Northstar — к началу страницы">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Northstar</span>
+      </a>
+      <a class="github-link" href="https://github.com/" target="_blank" rel="noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7.4A5.8 5.8 0 0 0 19.3 3 5.4 5.4 0 0 0 19.1 0S17.9-.4 15 1.5a14 14 0 0 0-6 0C6.1-.4 4.9 0 4.9 0a5.4 5.4 0 0 0-.2 3A5.8 5.8 0 0 0 3.2 7.1c0 5.8 3.5 7 6.8 7.4A4.8 4.8 0 0 0 9 18v4M9 19c-3 .9-3-1.5-4.2-2"/></svg>
+        <span>GitHub</span>
+      </a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">Личная коллекция</p>
+        <h1 id="hero-title">Инструменты,<br />которыми я пользуюсь.</h1>
+        <p class="hero-copy">Небольшие приложения для спокойной и быстрой работы.</p>
+      </section>
+
+      <section class="catalog" aria-labelledby="catalog-title">
+        <div class="section-heading">
+          <h2 id="catalog-title">Приложения</h2>
+          <span id="app-count" class="app-count" aria-live="polite"></span>
+        </div>
+        <div id="app-grid" class="app-grid"></div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Northstar</span>
+      <a href="https://github.com/" target="_blank" rel="noreferrer">Все проекты на GitHub</a>
+    </footer>
+
+    <section id="app-detail" class="app-detail" role="dialog" aria-modal="true" aria-labelledby="detail-title" hidden>
+      <div class="detail-bar">
+        <button class="detail-close" type="button" aria-label="Вернуться к приложениям">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" /></svg>
+        </button>
+      </div>
+      <div id="detail-content" class="detail-content"></div>
+    </section>
+
+    <script src="apps.js"></script>
+  </body>
+</html>
