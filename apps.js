@@ -53,7 +53,7 @@ const apps = [{
   iconImage: "assets/video-server-icon.svg",
   visualBg: "#111315",
   downloadUrl: "",
-  repoUrl: "",
+  repoUrl: "https://github.com/l1kad/videoserver",
   requirements: "Windows · Установщик собран локально"
 }, {
   id: "raiting-film",
@@ -71,7 +71,7 @@ const apps = [{
   iconImage: "assets/raiting-film-icon.jpeg",
   visualBg: "#090909",
   downloadUrl: "",
-  repoUrl: "",
+  repoUrl: "https://github.com/l1kad/raiting-film",
   requirements: "Windows 11 · Проект находится в разработке"
 }, {
   id: "d2cash-scanner",
@@ -89,7 +89,7 @@ const apps = [{
   iconImage: "assets/d2cash-scanner-icon.png",
   visualBg: "#09111f",
   downloadUrl: "",
-  repoUrl: "",
+  repoUrl: "https://github.com/l1kad/dota-gem-scanner",
   requirements: "Chrome · Edge · Яндекс Браузер · Установка из папки"
 }];
 
